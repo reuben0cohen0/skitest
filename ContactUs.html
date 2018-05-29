@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<title>Contact Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="Images/srlogtrans32.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="Images/srlogtrans16.ico" sizes="16x16" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="OurClub.html" class="w3-bar-item w3-button w3-hide-small"> OUR CLUB</a>
+    <a href="Membership.html" class="w3-bar-item w3-button w3-hide-small"> MEMBERSHIP</a>
+    <a href="OurLodge.html" class="w3-bar-item w3-button w3-hide-small"> OUR LODGE</a>
+      <a href="Bookings.html" class="w3-bar-item w3-button w3-hide-small"> BOOKINGS</a>
+      <a href="ContactUs.html" class="w3-bar-item w3-button w3-hide-small"> CONTACT US</a>
+      <a href="ClubNews.html" class="w3-bar-item w3-button w3-hide-small"> CLUB NEWS</a>
+      <a href="Photos.html" class="w3-bar-item w3-button w3-hide-small"> PHOTOS</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+    <a href="OurClub.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Our Club</a>
+    <a href="Membership.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Membership</a>
+    <a href="OurLodge.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Our Lodge</a>
+    <a href="Bookings.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Bookings</a>
+    <a href="ContactUs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact Us</a>
+    <a href="ClubNews.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Club News</a>
+    <a href="Photos.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Photos</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home"><img src="Images/bookinghead2.JPG" width="100%" height="50%" style="margin-top: 3%">
+  <div class="w3-display-topleft" style="white-space:nowrap; margin-top: 10%">
+      <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"> Contact Us</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  
+  <h4><b>You can reach us in the following ways.</b></h4>
+<b>
+<table style="width: 100%; font-size-adjust: auto">
+  <tr>
+    <tr>
+    <td>Lodge Phone Number*</td>
+    <td></td>
+    <td>07 892 3838</td>
+  </tr>
+    <br>
+    
+  <tr>
+    <td>Booking Officer</td>
+    <td></td>
+    <td><a href="mailto:mikebroke@xtra.co.nz">mikebroke@xtra.co.nz</a> </td>
+    </tr>
+      <br>
+      
+      <tr>
+    <td>President</td>
+    <td></td>
+    <td><a href="mailto:president@skiracers.co.nz">&nbsp;president@skiracers.co.nz</a> </td>
+    </tr>
+    <br>
+    
+    <tr>
+    <td>General Enquiries</td>
+    <td></td>
+      <td><a href="mailto:info@skiracers.co.nz">info@skiracers.co.nz</a></td>
+    </tr>
+    <br>
+    
+    <tr>
+    <td>Membership Enquiries</td>
+    <td></td>
+    <td><a href="mailto:lynettebroke@hotmail.com">lynettebroke@hotmail.com</a> </td>
+    </tr>
+    </table>
+    <br><br>
+    
+    <u>*No bookings or membership enquiries via this number</u><br><br>
+    </b>
+
+
+Great links<p></p>
+
+<a href="https://apps.mtruapehu.com/whakapapa" target="_blank">www.apps.mtruapheu.com</a><br>
+
+Whakapapa Snow Report<br>
+
+An excellent site for snow reports, forecasts and information.<br><br>
+
+
+
+<a href="http://www.bom.gov.au/australia/charts/msl_36hr_forecast.shtml" target="_blank">www.bom.gov.au</a> <br>
+A 36hr Forecast map of oncoming weather<br><br>
+
+    
+<a href="http://www.bom.gov.au/australia/satellite/?tz=AEST&unit=p23&domain=14&view=05&satSubmit=Refresh+View">www.bom.gov.au</a><br>
+An great satellite image of the Tasman Sea, giving you an idea of forthcoming weather.<br><br>
+
+
+
+<a href="http://www.metservice.com/skifields/whakapapa">www.metservice.com</a> <br>
+
+Metservice Weather Report - Whakapapa<br>
+
+Good for long range forecasts.<br><br>
+
+
+
+<h4><b>Committee Members</b></h4>
+    
+    <table cellspacing="10">
+    <tr>
+    <td>Co-President</td>
+    <td>-</td>
+      <td>Blair Robinson</td>
+    </tr>
+    <br>
+    
+    <tr>
+    <td>Co-President</td>
+    <td>-</td>
+      <td>Denise Cohen</td>
+    </tr>
+    <br>
+        
+    <tr>
+    <td>Treasurer</td>
+    <td>-</td>
+      <td>David Aitkinhead</td>
+    </tr>
+    <br>
+        
+    <tr>
+    <td>Booking Officer</td>
+    <td>-</td>
+      <td>Mike Brokenshire</td>
+    </tr>
+    <br>
+        
+    <tr>
+    <td>Catering Officer</td>
+    <td>-</td>
+      <td>Chris Turbott</td>
+    </tr>
+ 
+    <tr>
+    <td>Marketing</td>
+    <td>-</td>
+      <td>Megan Firkin</td>
+    </tr>
+        
+    <tr>
+    <td>Maintanence &<br> Projects Officer</td>
+    <td>-</td>
+      <td>Lance Bell</td>
+    </tr>
+        
+    <tr>
+    <td>Secretary</td>
+    <td>-</td>
+      <td>(Vacant)</td>
+    </tr>
+        
+    <tr>
+    <td>Membership<br>Secretary</td>
+    <td>-</td>
+      <td>Lynette Brokenshire</td>
+    </tr>
+        
+    <tr>
+    <td>Committee Member</td>
+    <td>-</td>
+      <td>Marisse Marshall</td>
+    </tr>
+        <br>
+        <br>
+        
+    </table>
+
+    <h4><b>Club Location</b></h4>
+
+Click to see our location:&nbsp; <a href="Ski%20Racers%20Map.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i>Ski Racers Map.pdf</a>
+
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+   <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/Ski-Racers-Ski-Club-615235508531129/?ref=stream" target="blank"></a> 
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/skiracersclub/?hl=en" target="_blank"></a>
+    </div></footer>
+    
+    <script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+    </script>
+
+</body>
+</html>

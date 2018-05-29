@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<title>Our Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="Images/srlogtrans32.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="Images/srlogtrans16.ico" sizes="16x16" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="OurClub.html" class="w3-bar-item w3-button w3-hide-small"> OUR CLUB</a>
+    <a href="Membership.html" class="w3-bar-item w3-button w3-hide-small"> MEMBERSHIP</a>
+    <a href="OurLodge.html" class="w3-bar-item w3-button w3-hide-small"> OUR LODGE</a>
+      <a href="Bookings.html" class="w3-bar-item w3-button w3-hide-small"> BOOKINGS</a>
+      <a href="ContactUs.html" class="w3-bar-item w3-button w3-hide-small"> CONTACT US</a>
+      <a href="ClubNews.html" class="w3-bar-item w3-button w3-hide-small"> CLUB NEWS</a>
+      <a href="Photos.html" class="w3-bar-item w3-button w3-hide-small"> PHOTOS</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+    <a href="OurClub.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Our Club</a>
+    <a href="Membership.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Membership</a>
+    <a href="OurLodge.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Our Lodge</a>
+    <a href="Bookings.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Bookings</a>
+    <a href="ContactUs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact Us</a>
+    <a href="ClubNews.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Club News</a>
+    <a href="Photos.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Photos</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home"><img src="Images/egmontsunset.JPG" width="100%" height="50%" style="margin-top: 3%">
+  <div class="w3-display-bottomleft" style="white-space:nowrap; margin-top: 10%">
+      <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"> &nbsp;Get the <span class="w3-hide-small"> low-down on Ski Racers <span><br>&nbsp; Find out about our club, <br>&nbsp; its history and </span> how things work  </span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT Ski Racers</h3>
+
+  <p>You truly can ski in, ski out – it doesn’t get any better than this!
+
+During the ski season we have live-in custodians who manage the club. 
+
+Your nightly fee includes a cooked  breakfast, light lunch, and a two-course dinner.
+
+The Lodge has modern mens and women's bathrooms, brand new mattresses and pillows in the six bunk rooms.
+
+Our flexible booking system allows you to make arrangements up until the Thursday evening of the coming weekend.
+
+The Lodge facilities include a ski workroom and drying room, as well as storage lockers and a lockable ski storage area. There’s a TV, quiet area and a pool table. Something for everyone!</p>
+  <div class="w3-row"><br>
+      <style>
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 35%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}</style>
+      
+      <div class="row"> 
+  <div class="column">
+     <img src="Images/apresski.JPG" alt="Apres Ski Fun" width="300" height="250">Early-evening apres ski fun outside the Club
+    <img src="Images/doorsnow.png" alt="Too Much snow" width="300" height="256">Too much snow! Yes, that’s the door!
+  </div>
+  <div class="column">
+    <img src="Images/clubabove.png" alt="Club from Above" width="300" height="250">The Club from above the Rangatira Express
+    <img src="Images/bluesky.JPG" alt="Another Blue Sky day" width="300" height="250">Another blue sky day!
+  </div> 
+      </div>
+
+      
+      <!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Club History</h3>
+
+  <p>Ski Racers Club was built in 1962 by a group of ski racers and officials from other clubs. The Lockwood design was very open plan with no bunk rooms like there are today. The top floor was open but in the 70’s or early 80’s, a wall was put up to separate the upstairs.<br><br>
+
+
+
+In the 70’s, and in need of money and members, Ski Racers amalgamated with the Manurewa Ski Club (who did not have a facility), and so became Ski Racers (Inc).<br><br>
+
+
+
+In the early 80’s, the committee surveyed it’s members to determine whether to: a) upgrade the Lodge; b) buy a section in Taupo; c) or build another club at Ohakune. It was unanimously agreed to upgrade the Lodge.<br><br>
+
+
+
+Over the last 15 years, Stage 1 and 2 of the upgrade programme have been completed at a cost of around $250,000. Stage 1 involved major structural changes which extended the chairlift end of the Club. New entrance way, ski room, drying room, custodian’s room, two new upstairs bunk rooms (only redistributing the same number of bunks), re-cladding the club in cedar, a number of new windows, and a complete rewire of the electrics. Stage 2 saw the extension of the Lodge along the back wall which opened up the lounge area, created a walk in pantry, extended the two bathrooms, completion of the internal hallways and TV room area. Also, the bunk rooms have been re-sanded, better carpet laid upstairs and the installation of an air conditioning system. Considerable input from members were required over these years and many gave huge amount of time on work parties.<br><br>
+
+
+
+Recently we have upgraded all the mattresses and pillows, and over the 2015/2016 summer we put new carpet throughout the Club, replaced the drying room floor, put in two brand new sparkling stainless ovens and installed an awesome woodburner. <br><br>
+
+
+
+Stage 3 is yet to be completed. This will involve the revamp the whole lounge area and complete installation of windows.<br><br>
+
+
+
+Although operating independently, all Whakapapa clubs are strictly controlled by the Department of Conservation (DOC). We pay bunk levies, which essentially is the license to operate.<br><br>
+
+
+
+Today, members and many non members enjoy the excellent facility we have. Ski Racers is renowned for it’s great food, wine  and friendly atmosphere. It has remained predominantly an Auckland based club for skiing only. Ski Racers has transformed over the years to a family based club with low membership.</p>
+  <div class="w3-row">
+    </div></div></div></div>
+    <div class="w3-content w3-container w3-padding-24" id="about">
+  <h3 class="w3-center"><a class="fa fa-file-pdf-o"></a><a href="Ski%20Racers%20Map.pdf" target="_blank" style="font-family: sans-serif;"> Ski Racers Map.pdf</a></h3>
+        </div>
+<center>
+    
+    <link class="w3-center" href="//www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="//www.snow-forecast.com/resorts/Whakapapa/forecasts/feed/bot/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><a href="https://www.snow-forecast.com/"><img alt="Snow Forecast" src="//www.snow-forecast.com/images/feed/snowlogo-150.png"/></a><p id="cmt">View detailed snow forecast for <a href="https://www.snow-forecast.com/resorts/Whakapapa/6day/mid">Whakapapa</a> at:<br /><a href="https://www.snow-forecast.com/"><strong>snow-forecast.com</strong></a></p><div style="clear: both;"></div></div></div></center><br><br>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+   <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/Ski-Racers-Ski-Club-615235508531129/?ref=stream" target="blank"></a> 
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/skiracersclub/?hl=en" target="_blank"></a>
+    </div></footer>
+    
+    <script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+    </script>
+
+</body>
+</html>

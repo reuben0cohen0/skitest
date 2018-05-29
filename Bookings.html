@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<title>Bookings</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="Images/srlogtrans32.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="Images/srlogtrans16.ico" sizes="16x16" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="OurClub.html" class="w3-bar-item w3-button w3-hide-small"> OUR CLUB</a>
+    <a href="Membership.html" class="w3-bar-item w3-button w3-hide-small"> MEMBERSHIP</a>
+    <a href="OurLodge.html" class="w3-bar-item w3-button w3-hide-small"> OUR LODGE</a>
+      <a href="Bookings.html" class="w3-bar-item w3-button w3-hide-small"> BOOKINGS</a>
+      <a href="ContactUs.html" class="w3-bar-item w3-button w3-hide-small"> CONTACT US</a>
+      <a href="ClubNews.html" class="w3-bar-item w3-button w3-hide-small"> CLUB NEWS</a>
+      <a href="Photos.html" class="w3-bar-item w3-button w3-hide-small"> PHOTOS</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+    <a href="OurClub.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Our Club</a>
+    <a href="Membership.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Membership</a>
+    <a href="OurLodge.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Our Lodge</a>
+    <a href="Bookings.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Bookings</a>
+    <a href="ContactUs.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact Us</a>
+    <a href="ClubNews.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Club News</a>
+    <a href="Photos.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Photos</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home"><img src="Images/club.jpg" width="100%" height="50%" style="margin-top: 3%">
+  <div class="w3-display-topleft" style="white-space:nowrap; margin-top: 5%">
+      <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"> Bookings</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">2018 Nightly Fees</h3>
+
+
+Our fully refundable rates* (if cancelled more than 7 days prior to use) are as follows:<br><p></p>
+
+<b>-Member Senior - $42<br><br>
+
+-Member Junior 11 to under 17 - $32<br><br>
+
+-Member Junior under 11 - $27<br><br>
+
+-Non-Member Senior - $75<br><br>
+
+-Non-Member Junior 11 to under 17 - $65<br><br>
+
+-Non-Member Junior under 11 - $50<br><br>
+
+-School Rate - $49<br><br>
+
+- Non-Member, mid-week group (>10 people) 20% discount<br><br></b>
+
+*Rate is non transferable but is refundable in full, if cancelled more than 5 days prior to booking; no refund is given if cancellation is made 4 or less days from booking. No refund is given if you choose to leave early.<br><br>
+
+
+<h4><b>
+    Non Member Booking Information</b></h4><br> 
+
+Members are welcome to bring Non Members with them and there is no waiting period to confirm bookings. We like to encourage members to bring friends and family to Ski Racers.<br>
+
+
+
+Members and their guests get priority, other Non Member bookings are confirmed two weeks prior.<br>
+
+
+
+    <h4><b>Booking Rules</b></h4>
+
+The booking system is a key part of how the Club functions. For it to work well, all bookings must go through the Booking Officer. It is not acceptable to turn up at the Club ‘unbooked’. The full rules are on the Booking Form.<br><br>
+
+    
+    
+<h4><b>2018 School Holidays</b></h4><br>
+
+Primary and Secondary school holidays dates are:<br><br>
+
+    Term 2 & 3 holidays fall: <b>Fri 6 July - Mon 30 July</b><br><br>
+
+    Term 3 & 4 holidays fall: <b>Fri 29 September - Mon 15 October</b><br><br>
+      
+    
+
+<h4><b>Booking Forms</b></h4><br><br>
+
+You’re one easy step away from a booking!<br><br>
+
+
+
+Click the link below to download a Booking Form. <p></p>
+
+    <a href="BOOKING%20FORM%202018.docx" style="font-family: sans-serif"><b><h4><i class="fa fa-file-word-o"></i> BOOKING FORM 2017.docx</h4></b></a><br>
+
+The form is a Word doc, just complete, “save as” the file with your name, ie: Booking Form - Jones family and email to Mike, our Booking Officer. <br><br>
+
+
+
+You must use a separate form for every booking. You can put all the guests for a booking on the same form, but different booking periods must each be on a different form.<br><br>
+
+
+
+Confirmation of your booking will be emailed back (or sent via text) within 24-48 hours. You are not booked in until your booking is confirmed. Payment must be made at time of booking, and your booking will only be confirmed once payment is made.<br><br>
+
+
+
+    Any questions, email the Booking Officer at <a href="mailto:mikebroke@xtra.co.nz">mikebroke@xtra.co.nz.</a><br><br> 
+
+
+
+<h4><b>Current Booking Status</b></h4><br><br>
+
+Regular booking updates are emailed to members throughout the season. It is worthwhile going on the wait list as there are always changes to bookings. During the season, Booking Status reports are regularly updated and are available here to download.<p></p>
+
+<a href="BOOKING%20UPDATE%2018%20Sept%202017.docx"><i class="fa fa-file-pdf-o"></i> Booking Update Sept 2017</a><br><br>
+
+
+
+<h4><b>General Booking Information</b></h4><br><br>
+
+    Need to cancel? You must do so by emailing <a href="mailto:mikebroke@xtra.co.nz">mikebroke@xtra.co.nz</a> or text to 021 254 3101. A full refund is given if cancellation is made <b>seven</b> or more days out from booking, ie: Friday prior to Friday booking.<br><br>
+
+
+
+If you are interested in booking a school group, or taking a group from work or another club or society, please contact the Booking Officer via email at <a href="mailto:mikebroke@xtra.co.nz">mikebroke@xtra.co.nz</a><br><br>
+
+
+
+    If you’re not sure where we are located, click to see our map: <a href="Ski%20Racers%20Map.pdf"><i class="fa fa-file-pdf-o"></i> Ski Racers Map.pdf</a><br><br>
+
+
+
+    If it’s your first time at Ski Racers and you need a detailed outline of what to bring and how to get there, view this document: <a href="What%20to%20bring%20skiing%20when%20you%20stay%20at%20Ski%20Racers%20Club.pdf"><br><i class="fa fa-file-pdf-o"></i> What to bring skiing when you stay at Ski Racers Club.pdf</a><br><br>
+
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+   <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/Ski-Racers-Ski-Club-615235508531129/?ref=stream" target="blank"></a> 
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/skiracersclub/?hl=en" target="_blank"></a>
+    </div></footer>
+    
+    <script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+    </script>
+
+</body>
+</html>
